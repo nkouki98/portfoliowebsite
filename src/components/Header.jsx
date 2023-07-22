@@ -1,5 +1,5 @@
 import * as BoxIcons from "react-icons/bi"
-import FileDownload from 'js-file-download';
+
 const Header = () => {
   
     // Function to handle the download button click

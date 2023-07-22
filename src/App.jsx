@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-
 import Header from './components/Header'
 import About from './components/About'
 import Work from './components/Work'
 import Contact from './components/Contact'
 import { FullPage, Slide } from 'react-full-page';
-import { BsFileBreak } from 'react-icons/bs'
+
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
   const breakpoint = 1024;
@@ -58,7 +57,7 @@ function App() {
 
 
   
-  )
-}
+  );
+};
 
 export default App

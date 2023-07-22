@@ -1,7 +1,5 @@
 import React from 'react'
-import * as BootStrap from "react-icons/bs"
 import * as BoxIcons from "react-icons/bi"
-import { Fullpage, Slide, HorizontalSlider } from 'fullpage-react'
 const Work = () => {
  
   return (
