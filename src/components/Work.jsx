@@ -1,65 +1,68 @@
 import React from 'react'
-import * as BoxIcons from "react-icons/bi"
+import * as Bootstrap from "react-icons/bs"
+import { motion } from "framer-motion";
 const Work = () => {
- 
+  const redirectToURL = () => {
+    url = 'https://weatherreact-five.vercel.app/'; 
+    window.open(url, '_blank');
+  };
   return (
  
-<div className='min-h-screen w-screen lg:mx-10 scale-95 bg-black'>
-  <h1 className="text-5xl font-thin font-sans text-white tracking-tighter p-3 md:p-12 text-center md:text-left">
+<div id='3' className='min-h-screen w-screen lg:mx-10'>
+<motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once:false, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+          variants={{
+            hidden: { opacity: 0, x: -150},
+            visible: { opacity: 1, x: -50, y:20},
+          }}
+        >   
+          
+  
+
+  <h1 className=" italic my-2 text-6xl font-thin font-sans text-gray-800 -tracking-widest p-3 md:p-12 text-center md:text-left">
     Recent work
   </h1>
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 mx-2 md:mx-auto justify-items-center items-center">
-    {/* Column 1 */}
-    <div className="bg-transparent p-2">
-      <p className='text-white text-sm mb-2 md:mb-5'>Traveller's weather</p>
-      <img
-        src="project1.png"
-        alt="Image 1"
-        className="lg:w-full h-auto sm:w-2/3 mx-auto shadow-md rounded-lg hover:scale-105"
-      />
-      <div className='flex justify-center md:justify-start mt-3'>
-        <button className='text-yellow-100 font-sans font-thin text-base mx-auto md:mx-0 tracking-wider'>
-          Github
-        </button>
-        <BoxIcons.BiLogoReact className=" mx-2 md:mx-auto text-4xl text-blue-600 hover:scale-105" />
-        <BoxIcons.BiLogoTailwindCss className=" mx-2 md:mx-auto text-4xl text-blue-200 hover:scale-105" />
-      </div>
-    </div>
+  </motion.div>
 
-    {/* Column 2 */}
-    <div className="bg-transparent p-2">
-      <p className='text-white text-sm mb-2 md:mb-5'>Go RESTful API</p>
-      <img
-        src="https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Fuchsia.svg"
-        alt="Image 2"
-        className="lg:w-full border border-gray-500 lg:h-auto sm:w-2/3 sm:h-3/4 w-full mx-auto shadow-md rounded-lg hover:scale-105"
-      />
-      <div className='flex justify-center md:justify-start mt-3'>
-        <button className='text-yellow-100 font-sans font-thin text-base mx-auto md:mx-0 tracking-wider'>
-          Github
-        </button>
-        <BoxIcons.BiLogoReact className=" mx-2 md:mx-auto text-4xl text-blue-600 hover:scale-105" />
-        <BoxIcons.BiLogoTailwindCss className=" mx-2 md:mx-auto text-4xl text-blue-200 hover:scale-105" />
-      </div>
-    </div>
+  <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once:false, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+          variants={{
+            hidden: { opacity: 0, x: -150},
+            visible: { opacity: 1, x: 10, y:20},
+          }}
+        >   
+          
+  
 
-    {/* Column 3 */}
-    <div className="bg-transparent p-2">
-      <p className='text-white text-sm mb-2 md:mb-5'>Portfolio</p>
-      <img
-        src="project3.png"
-        alt="Image 3"
-        className="w-full h-auto mx-auto shadow-md rounded-lg hover:scale-105"
-      />
-      <div className='flex justify-center md:justify-start mt-3'>
-        <button className='text-yellow-100 font-sans font-thin text-base mx-auto md:mx-0 tracking-wider'>
-          Github
-        </button>
-        <BoxIcons.BiLogoReact className=" mx-2 md:mx-auto text-4xl text-blue-600 hover:scale-105" />
-        <BoxIcons.BiLogoTailwindCss className=" mx-2 md:mx-auto text-4xl text-blue-200 hover:scale-105" />
-      </div>
+
+ 
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+    
+      <div className="relative">
+      <img src="project2.png"  className="shadow-lg w-full bg-nav h-36 lg:h-64 object-cover  "/>
+      <a href='https://github.com/nkouki98/Go-RestfulAPI' target="_blank" className="shadow-2xl absolute bottom-4 left-2 text-xl p-2 text-white hover:scale-125"><Bootstrap.BsArrowUpRightSquareFill/></a>
+      
     </div>
-  </div>
+    <div className="relative">
+      <img src="project1.png" className="shadow-lg w-full bg-nav h-36 lg:h-64 object-cover "/>
+      <a href='https://weatherreact-five.vercel.app/' target="_blank" className="absolute shadow-2xl bottom-4 left-2 text-xl p-2 text-white hover:scale-125"><Bootstrap.BsArrowUpRightSquareFill/></a>
+      
+    </div>
+    <div className="relative">
+      <img src="project3.png"  className="shadow-lg w-full bg-nav h-36 lg:h-64 object-cover  "/>
+      <a href='https://github.com/nkouki98/portfoliowebsite' target="_blank" className="shadow-2xl absolute bottom-4 left-2 text-xl p-2 text-black hover:scale-125"><Bootstrap.BsArrowUpRightSquareFill/></a>
+      
+  
+					
+				</div>
+        </div>
+        </motion.div>
 </div>
 
 
