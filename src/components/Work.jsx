@@ -55,10 +55,10 @@ const Work = () => {
       
     </div>
     <div className="relative">
+      
       <img src="project3.png"  className="h-80 w-full object-cover shadow-md rounded-sm border border-gray-700 "/>
       <a href='https://github.com/nkouki98/portfoliowebsite' target="_blank" className="shadow-2xl absolute bottom-4 left-2 text-xl p-2 text-black hover:scale-125"><Bootstrap.BsArrowUpRightSquareFill/></a>
-      
-  
+     
 					
 				</div>
         </div>
