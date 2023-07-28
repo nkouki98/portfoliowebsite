@@ -22,8 +22,8 @@ const Header = () => {
 
       <header id='1' className="bg-white min-h-screen flex justify-center items-center">
         <div>
-        <h1 className="lg:text-9xl text-5xl font-serif italic -tracking-widest text-slate-800">Syed Farhan Ahmed</h1>
-        <p className="text-slate-700 text-3xl font-light tracking-widest ">Aspiring Full-stack developer</p>
+        <h1 className="lg:text-7xl text-5xl font-serif italic -tracking-widest text-slate-800">Syed Farhan Ahmed</h1>
+        <p className="text-slate-700 text-xl font-light tracking-widest ">Aspiring Full-stack developer</p>
         
         <button onClick={handleDownload} className="hover:scale-110 text-lg font-light tracking-tighter w-1/8 p-3 text-gray-700 ">
       Resume <BoxIcons.BiDownArrowAlt className=" items-center text-center inline-flex"/>

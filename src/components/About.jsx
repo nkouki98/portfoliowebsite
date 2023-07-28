@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from "framer-motion";
 const About = () => {
   return (
-   <div id="2" className='flex justify-center min-h-screen'>
+   <div id="2" className='flex justify-center min-h-screen border-8 border-white bg-cover bg-center bg-black '>
 
     <div className="grid grid-cols-1 md:grid-cols-[1fr,3fr]">
     <motion.div
@@ -15,14 +15,14 @@ const About = () => {
             visible: { opacity: 1, x: 0,  y:250 },
           }}
         >   
-          <div className="flex justify-center items-center p-2 scale-75">
-            <h1 className="font-thin font-sans sm:text-lg md:text-xl lg:text-6xl hover:scale-110 -tracking-widest text-white ">About Me</h1>
-          </div>
+      <div className="">
+        <h1 className=" invisible md:visible font-thin font-sans md:text-3xl -tracking-wider text-white mx-auto ">About Me</h1>
+      </div>
   
       </motion.div>
 
 
-      <div className="flex justify-center items-center p-5 md:p-8 w-full ">
+      <div className="p-3 mx-auto md:p-5 w-full md:items-center md:flex ">
       <motion.div
           initial="hidden"
           whileInView="visible"
@@ -33,7 +33,7 @@ const About = () => {
             visible: { opacity: 1, x: 0},
           }}
         >   
-        <p className="font-thin font-sans text-base sm:text-xs md:text-base lg:text-xl  text-gray-800 lg:text-gray-300 p-10 text-ellipsis text-left">
+        <p className=" font-thin font-sans text-sm md:text-lg text-gray-300 md:p-10 text-ellipsis text-left">
         Hi, I'm Farhan, a passionate and detail-oriented web developer based in Calgary, Alberta. I'm currently pursuing my undergraduate studies at the University of Calgary, where I'm constantly honing my skills and exploring new technologies in the world of web development.
             My primary focus is on Full-stack development, with a strong emphasis on front-end technologies. I enjoy creating visually appealing and user-friendly websites that leave a lasting impression on users.
             Besides coding, I have a keen interest in photography, both film and digital. When I'm not in front of a computer, you'll often find me capturing moments through the lens of my camera, finding beauty in the world around me.

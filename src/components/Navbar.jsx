@@ -8,7 +8,7 @@ const StickyNavbar = () => {
         <button className="mr-4 hover:scale-110">
           <Link
             activeClass="active"
-            to="#work"
+            to="#3"
             spy={true}
             smooth={true}
             offset={-70}
@@ -22,7 +22,7 @@ const StickyNavbar = () => {
         <button className="mr-4 hover:scale-110">
           <Link
             activeClass="active"
-            to="about"
+            to="2"
             spy={true}
             smooth={true}
             offset={-70}
