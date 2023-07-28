@@ -62,7 +62,7 @@ function App() {
       <div className='md:snap-start bg-transparent h-screen w-screen flex items-center justify-center '>
         <Header/>
       </div>
-      <div className='md:snap-start bg-white h-screen w-screen flex items-center justify-center '>
+      <div className='md:snap-start bg-white md:h-screen w-screen flex items-center justify-center '>
       <About/>
       </div>
       <div className='md:snap-start bg-white md:h-screen w-screen flex items-center justify-center'>

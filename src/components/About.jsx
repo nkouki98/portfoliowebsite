@@ -16,7 +16,7 @@ const About = () => {
           }}
         >   
       <div className="">
-        <h1 className=" invisible md:visible font-thin font-sans md:text-3xl -tracking-wider text-white mx-auto ">About Me</h1>
+        <h1 className=" font-thin font-sans md:text-3xl -tracking-wider text-white mx-auto ">About Me</h1>
       </div>
   
       </motion.div>
@@ -33,7 +33,7 @@ const About = () => {
             visible: { opacity: 1, x: 0},
           }}
         >   
-        <p className=" font-thin font-sans text-sm md:text-lg text-gray-300 md:p-10 text-ellipsis text-left">
+        <p className=" font-thin font-sans text-base md:text-lg text-gray-300 md:p-16 text-ellipsis text-left">
         Hi, I'm Farhan, a passionate and detail-oriented web developer based in Calgary, Alberta. I'm currently pursuing my undergraduate studies at the University of Calgary, where I'm constantly honing my skills and exploring new technologies in the world of web development.
             My primary focus is on Full-stack development, with a strong emphasis on front-end technologies. I enjoy creating visually appealing and user-friendly websites that leave a lasting impression on users.
             Besides coding, I have a keen interest in photography, both film and digital. When I'm not in front of a computer, you'll often find me capturing moments through the lens of my camera, finding beauty in the world around me.

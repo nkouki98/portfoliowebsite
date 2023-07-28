@@ -22,7 +22,7 @@ const Work = () => {
           
   
 
-  <h1 className=" font-semibold md:text-7xl text-xl font-sans text-zinc-400 -tracking-widest md:p-5 text-center md:text-left">
+  <h1 className=" font-semibold md:text-7xl text-xl font-sans text-zinc-500 -tracking-widest md:p-5 text-center md:text-left">
     Recent work
   </h1>
   </motion.div>
@@ -42,20 +42,20 @@ const Work = () => {
 
 
  
-  <div className="grid grid-cols-1 gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-5 p-5">
+  <div className="grid grid-cols-1 gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-5 p-5">
     
       <div className="relative ">
-      <img src="project2.png"  className="h-60 w-full object-cover shadow-md rounded-sm "/>
+      <img src="project2.png"  className=" h-80 w-full object-cover shadow-md rounded-sm "/>
       <a href='https://github.com/nkouki98/Go-RestfulAPI' target="_blank" className="shadow-2xl absolute bottom-4 left-2 text-xl p-2 text-white hover:scale-125"><Bootstrap.BsArrowUpRightSquareFill/></a>
       
     </div>
     <div className="relative">
-      <img src="project1.png" className="h-60 w-full object-cover  shadow-md rounded-sm "/>
+      <img src="project1.png" className="h-80 w-full object-cover  shadow-md rounded-sm "/>
       <a href='https://weatherreact-five.vercel.app/' target="_blank" className="absolute shadow-2xl bottom-4 left-2 text-xl p-2 text-white hover:scale-125"><Bootstrap.BsArrowUpRightSquareFill/></a>
       
     </div>
     <div className="relative">
-      <img src="project3.png"  className="h-60 w-full object-cover shadow-md rounded-sm "/>
+      <img src="project3.png"  className="h-80 w-full object-cover shadow-md rounded-sm border border-gray-700 "/>
       <a href='https://github.com/nkouki98/portfoliowebsite' target="_blank" className="shadow-2xl absolute bottom-4 left-2 text-xl p-2 text-black hover:scale-125"><Bootstrap.BsArrowUpRightSquareFill/></a>
       
   
