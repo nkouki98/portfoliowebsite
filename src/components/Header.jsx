@@ -5,7 +5,7 @@ const Header = () => {
     // Function to handle the download button click
     const handleDownload = () => {
       // Get the URL of the PDF file from the public folder
-      const pdfURL ='/SyedAhmed.pdf';
+      const pdfURL ='/SyedFarhanAhmed.pdf';
   
       // Create a temporary link element
       const link = document.createElement('a');
