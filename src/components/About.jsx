@@ -15,14 +15,14 @@ const About = () => {
             visible: { opacity: 1, x: 0,  y:250 },
           }}
         >   
-      <div className="">
+      <div className="relative">
         <h1 className=" invisible md:visible font-thin font-sans md:text-3xl -tracking-wider text-white mx-auto ">About Me</h1>
       </div>
   
       </motion.div>
 
 
-      <div className="p-3 mx-auto md:p-5 w-full md:items-center md:flex ">
+      <div className="p-3 mx-auto md:p-5 w-full relative md:items-center md:flex ">
       <motion.div
           initial="hidden"
           whileInView="visible"
