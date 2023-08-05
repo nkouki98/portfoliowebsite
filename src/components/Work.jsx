@@ -7,7 +7,7 @@ const Work = () => {
     window.open(url, '_blank');
   };
   return (
- 
+   
 <div id='3' className='min-h-screen w-screen'>
 <motion.div
           initial="hidden"

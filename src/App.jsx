@@ -6,7 +6,7 @@ import Work from './components/Work'
 import Contact from './components/Contact'
 import { FullPage, Slide } from 'react-full-page'
 import Layout from './components/Layout'
-
+import ParticleContainer from './components/ParticleContainer'
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
   const breakpoint = 1024;
@@ -27,42 +27,17 @@ function App() {
   
   <>
 
-{/* {width < breakpoint && 
 
-<div className='min-h-screen bg-transparent overflow-y-auto'>
-  <Layout>
-  <Header/>
-  <About/>
-  <Work/>
-  <Contact/>
-  </Layout>
-   
-    </div> 
-    }
+
+
+    <div className='snap-y snap-mandatory h-screen w-screen overflow-scroll overflow-x-hidden'>
+    <ParticleContainer/>
   
- 
-    {width > breakpoint && 
-    <div className='snap-y snap-mandatory h-screen w-screen overflow-scroll overflow-x-hidden'>
-      <div className='snap-start bg-transparent h-screen w-screen flex items-center justify-center text-8xl'>
+      <div className='md:snap-start bg-black h-screen w-screen flex items-center justify-center '>
+      
         <Header/>
       </div>
-      <div className='snap-start bg-white h-screen w-screen flex items-center justify-center text-8xl'>
-      <About/>
-      </div>
-      <div className='snap-start bg-white h-screen w-screen flex items-center justify-center text-8xl'>
-      <Work/>
-      </div>
-      <div className='snap-start bg-white h-screen w-screen flex items-center justify-center text-8xl'>
-      <Contact/>
-      </div>
-    </div>} */}
-
-
-    <div className='snap-y snap-mandatory h-screen w-screen overflow-scroll overflow-x-hidden'>
-      <div className='md:snap-start bg-transparent h-screen w-screen flex items-center justify-center '>
-        <Header/>
-      </div>
-      <div className='md:snap-start bg-white md:h-screen w-screen flex items-center justify-center '>
+      <div className='md:snap-start  bg-black md:h-screen w-screen flex items-center justify-center '>
       <About/>
       </div>
       <div className='md:snap-start bg-white md:h-screen w-screen flex items-center justify-center'>
@@ -71,6 +46,7 @@ function App() {
       <div className='md:snap-start bg-white h-screen w-screen flex items-center justify-center '>
       <Contact/>
       </div>
+    
     </div>
     </>
 

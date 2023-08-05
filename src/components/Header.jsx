@@ -1,5 +1,5 @@
 import * as BoxIcons from "react-icons/bi"
-
+import ParticleContainer from "./ParticleContainer";
 const Header = () => {
   
     // Function to handle the download button click
@@ -20,17 +20,23 @@ const Header = () => {
   
     return (
 
-      <header id='1' className="bg-white min-h-screen flex justify-center items-center">
-        <div>
-        <h1 className="lg:text-7xl text-5xl font-serif italic -tracking-widest text-slate-800">Syed Farhan Ahmed</h1>
-        <p className="text-slate-700 text-xl font-light tracking-widest ">Aspiring Full-stack developer</p>
+      <header id='1' className="bg-black min-h-screen flex justify-center items-center">
+
+        <div className="relative">
+      
+        <h1 className="lg:text-7xl font-sans font-normal text-4xl tracking-tighter text-zinc-300">SYED FARHAN AHMED
+        </h1>
+       
+        {/* <p className="text-zinc-500 text-xl font-light tracking-widest ">
+       Developer</p> */}
         
-        <button onClick={handleDownload} className="hover:scale-110 text-lg font-light tracking-tighter w-1/8 p-3 text-gray-700 ">
-      Resume <BoxIcons.BiDownArrowAlt className=" items-center text-center inline-flex"/>
+        <button onClick={handleDownload} className=" border font-sans font-normal border-zinc-400 mt-3 shadow-md rounded hover:scale-110 text-lg  tracking-tighter w-1/4 p-2 text-zinc-300 ">
+          RESUME 
        </button>
+     
         
-        
-        </div>        
+        </div> 
+   
       </header>
     );
   };
