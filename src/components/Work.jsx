@@ -42,21 +42,29 @@ const Work = () => {
 
 
  
-  <div className="grid grid-cols-1 gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-5 p-5">
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-5 p-5">
     
       <div className="relative ">
-      <img src="project2.png"  className=" h-80 w-full object-cover shadow-md rounded-sm "/>
+      <img src="project2.png"  className=" h-48 w-full object-cover shadow-xl rounded-lg "/>
       <a href='https://github.com/nkouki98/Go-RestfulAPI' target="_blank" className="shadow-2xl absolute bottom-4 left-2 text-xl p-2 text-white hover:scale-125"><Bootstrap.BsArrowUpRightSquareFill/></a>
       
     </div>
     <div className="relative">
-      <img src="project1.png" className="h-80 w-full object-cover  shadow-md rounded-sm "/>
+      <img src="project1.png" className="h-48 w-full object-cover shadow-xl rounded-lg "/>
       <a href='https://weatherreact-five.vercel.app/' target="_blank" className="absolute shadow-2xl bottom-4 left-2 text-xl p-2 text-white hover:scale-125"><Bootstrap.BsArrowUpRightSquareFill/></a>
       
     </div>
     <div className="relative">
       
-      <img src="project3.png"  className="h-80 w-full object-cover shadow-md rounded-sm border border-gray-700 "/>
+      <img src="project3.png"  className=" h-48 w-full object-cover shadow-xl rounded-lg border  "/>
+      <a href='https://github.com/nkouki98/ReviewScoreplus' target="_blank" className="shadow-2xl absolute bottom-4 left-2 text-xl p-2 text-white hover:scale-125"><Bootstrap.BsArrowUpRightSquareFill/></a>
+     
+					
+				</div>
+
+        <div className="relative">
+      
+      <img src="project4.png"  className="h-48 w-full object-cover shadow-xl rounded-lg border  "/>
       <a href='https://github.com/nkouki98/portfoliowebsite' target="_blank" className="shadow-2xl absolute bottom-4 left-2 text-xl p-2 text-white hover:scale-125"><Bootstrap.BsArrowUpRightSquareFill/></a>
      
 					

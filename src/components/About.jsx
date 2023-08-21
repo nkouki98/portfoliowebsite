@@ -16,7 +16,7 @@ const About = () => {
           }}
         >   
       <div className="relative">
-        <h1 className=" invisible md:visible font-thin font-sans md:text-3xl -tracking-wider text-white mx-auto ">About Me</h1>
+        <h1 className=" invisible md:visible font-thin font-sans md:text-3xl tracking-tighter text-white mx-auto ">About Me</h1>
       </div>
   
       </motion.div>

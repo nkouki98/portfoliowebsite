@@ -24,13 +24,13 @@ const Header = () => {
 
         <div className="relative">
       
-        <h1 className="lg:text-7xl font-sans font-normal text-4xl tracking-tighter text-zinc-300">SYED FARHAN AHMED
+        <h1 className="lg:text-5xl font-serif font-extralight text-4xl tracking-tight italic text-zinc-300">Syed Farhan Ahmed
         </h1>
        
         {/* <p className="text-zinc-500 text-xl font-light tracking-widest ">
        Developer</p> */}
         
-        <button onClick={handleDownload} className=" border font-sans font-normal border-zinc-400 mt-3 shadow-md rounded hover:scale-110 text-lg  tracking-tighter w-1/4 p-2 text-zinc-300 ">
+        <button onClick={handleDownload} className=" border font-sans font-normal border-zinc-400 mt-5 shadow-md rounded hover:scale-110 text-lg  tracking-tighter w-1/4 p-2 text-zinc-300 ">
           RESUME 
        </button>
      
