@@ -2,10 +2,7 @@ import React from 'react'
 import * as Bootstrap from "react-icons/bs"
 import { motion } from "framer-motion";
 const Work = () => {
-  const redirectToURL = () => {
-    url = 'https://weatherreact-five.vercel.app/'; 
-    window.open(url, '_blank');
-  };
+ 
   return (
    
 <div id='3' className='min-h-screen w-screen'>
@@ -38,10 +35,7 @@ const Work = () => {
           }}
         >   
           
-  
 
-
- 
   <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-5 p-5">
     
       <div className="relative ">
