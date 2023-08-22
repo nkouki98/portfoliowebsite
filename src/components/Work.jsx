@@ -19,8 +19,8 @@ const Work = () => {
           
   
 
-  <h1 className=" font-semibold md:text-7xl text-xl font-sans text-zinc-500 -tracking-widest md:p-5 text-center md:text-left">
-    Recent work
+  <h1 className=" font-semibold md:text-8xl text-2xl font-sans text-neutral-400 -tracking-widest md:p-2 text-center md:text-left">
+    Recent work.
   </h1>
   </motion.div>
 
@@ -58,9 +58,9 @@ const Work = () => {
 
         <div className="relative">
       
-      <img src="project4.png"  className="h-48 w-full object-cover shadow-xl rounded-lg border  "/>
-      <a href='https://github.com/nkouki98/ReviewScoreplus' target="_blank" className="shadow-2xl absolute bottom-4 left-2 text-xl p-2 text-white hover:scale-125"><Bootstrap.BsArrowUpRightSquareFill/></a>
-     
+          <img src="project4.png"  className="h-48 w-full object-cover shadow-xl rounded-lg border  "/>
+          <a href='https://github.com/nkouki98/ReviewScoreplus' target="_blank" className="shadow-2xl absolute bottom-4 left-2 text-xl p-2 text-white hover:scale-125"><Bootstrap.BsArrowUpRightSquareFill/></a>
+      
 					
 				</div>
         </div>

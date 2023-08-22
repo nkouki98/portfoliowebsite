@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from "framer-motion";
 const About = () => {
   return (
-   <div id="2" className='flex justify-center min-h-screen border-8 border-white bg-cover bg-center bg-black '>
+   <div id="2" className='flex justify-center min-h-screen border-8 border-yellow-600 bg-cover bg-center bg-black '>
 
     <div className="grid grid-cols-1 md:grid-cols-[1fr,3fr]">
     <motion.div
