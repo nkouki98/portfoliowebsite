@@ -2,64 +2,17 @@ import React from 'react';
 import { Link } from 'react-scroll';
 const StickyNavbar = () => {
   return (
-<nav className="sticky justify-center tracking-widest top-0 bg-transparent font-thin font-sans flex py-2 px-8 text-slate-700">
+<nav className="sticky justify-start tracking-wider top-0 bg-transparent font-sans flex pl-10">
       <ul className="flex">
-        <li>
-        <button className="mr-4 hover:scale-110">
-          <Link
-            activeClass="active"
-            to="#3"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            Work
-          </Link>
-        </button>
+        
+        <li className='text-bold sm:text-sm md:text-base tracking-wider font-sans mx-auto mt-5 text-black '>
+        
+            SYED FARHAN AHMED
+         
+      
         </li>
-        <li>
-        <button className="mr-4 hover:scale-110">
-          <Link
-            activeClass="active"
-            to="2"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            About
-          </Link>
-        </button>
-        </li>
-        <li>
-        <button className="mr-4 hover:scale-110">
-          <Link
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-           Contact
-          </Link>
-        </button>
-        </li>
-        <li>
-        <button className="mr-4 hover:scale-110">
-          <Link
-            activeClass="active"
-            to="resume"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            Resume
-          </Link>
-        </button>
-        </li>
+      
+      
       </ul>
     </nav>
   

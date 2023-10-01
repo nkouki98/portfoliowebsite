@@ -50,7 +50,7 @@ const Work = () => {
     </div>
     <div className="relative">
       
-      <img src="project3.png"  className=" h-48 w-full object-cover shadow-xl rounded-lg border  "/>
+      <img src="project6.png"  className=" h-48 w-full object-cover shadow-xl rounded-lg border  "/>
       <a href='https://github.com/nkouki98/portfoliowebsite' target="_blank" className="shadow-2xl absolute bottom-4 left-2 text-xl p-2 text-white hover:scale-125"><Bootstrap.BsArrowUpRightSquareFill/></a>
      
 					
