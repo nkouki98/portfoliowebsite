@@ -20,7 +20,7 @@ const Work1 = () => {
         <div className="w-full md:w-1/2 md:pl-8">
           
           <h2 className="text-3xl font-normal font-sans text-gray-800">Next city</h2>
-          <p className="mt-4 text-lg text-left text-gray-600 px-2">Your description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula vestibulum purus, eget ullamcorper velit bibendum a. Sed at justo eu libero vehicula pharetra.</p>
+          <p className="mt-4 text-lg text-left text-gray-600 px-2">An interactive weather app that shows useful weather details and nearby restaurants for the user with dynamic background imagery that adapts to any city the user searches.</p>
           <p className='text-left text-zinc-400 px-2'>React, tailwind CSS, RestFul APIs</p>
           <button className=' justify-start items-start bg-emerald-500 shadow-md rounded-md p-3 w-2/12 text-white font-sans tracking-wider mx-auto my-8 hover:scale-110'>View</button>
         </div>
@@ -33,7 +33,7 @@ const Work1 = () => {
         <div className="w-full md:w-1/2 md:pl-8">
           {/* Text (Title and Description) on the right */}
           <h2 className="text-3xl font-normal  font-sans text-gray-800">ReviewScore+</h2>
-          <p className="mt-4 text-lg text-left text-gray-600">Your description goes here for the second project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula vestibulum purus, eget ullamcorper velit bibendum a. Sed at justo eu libero vehicula pharetra.</p>
+          <p className="mt-4 text-lg text-left text-gray-600">An app that leverages user reivews and NLP libary to score comments and build a confidence measure for youtube channels that review tech products.</p>
           
           <p className='text-left text-zinc-400'>Java, Spring boot, Python text processing</p>
           <button className=' justify-start items-start bg-emerald-500 shadow-md rounded-md p-3 w-2/12 text-white font-sans tracking-wider mx-auto my-8 hover:scale-110'>View</button>
