@@ -22,7 +22,8 @@ const Work1 = () => {
           <h2 className="text-3xl font-normal font-sans text-gray-800">Next city</h2>
           <p className="mt-4 text-lg text-left text-gray-600 px-2">An interactive weather app that shows useful weather details and nearby restaurants for the user with dynamic background imagery that adapts to any city the user searches.</p>
           <p className='text-left text-zinc-400 px-2'>React, tailwind CSS, RestFul APIs</p>
-          <a href="https://github.com/nkouki98/weatherreact" className=' justify-start items-start bg-emerald-500 shadow-md rounded-md p-3 w-2/12 text-white font-sans tracking-wider mx-auto my-8 hover:scale-110'>View</button>
+          <a href="https://github.com/nkouki98/weatherreact" className="flex justify-center items-center bg-emerald-500 shadow-md rounded-md p-3 w-2/12 text-white font-sans tracking-wider mx-auto my-8 hover:scale-110">View</a>
+
         </div>
       </div>
       {/* Second Row */}
@@ -36,7 +37,7 @@ const Work1 = () => {
           <p className="mt-4 text-lg text-left text-gray-600">An app that leverages user reivews and NLP libary to score comments and build a confidence measure for youtube channels that review tech products.</p>
           
           <p className='text-left text-zinc-400'>Java, Spring boot, Python text processing</p>
-          <a href="https://github.com/nkouki98/ReviewScoreplus" className=' justify-start items-start bg-emerald-500 shadow-md rounded-md p-3 w-2/12 text-white font-sans tracking-wider mx-auto my-8 hover:scale-110'>View</button>
+          <a href="https://github.com/nkouki98/ReviewScoreplus" className="flex justify-center items-center bg-emerald-500 shadow-md rounded-md p-3 w-2/12 text-white font-sans tracking-wider mx-auto my-8 hover:scale-110">View</a>
         </div>
       </div>
 
