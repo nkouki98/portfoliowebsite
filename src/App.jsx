@@ -11,20 +11,7 @@ import Layout from './components/Layout'
 import React, { useState, useEffect } from 'react';
 
 function App() {
-  const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 1024;
 
-
-
- useEffect(() => {
-    const handleResizeWindow = () => setWidth(window.innerWidth);
-     // subscribe to window resize event "onComponentDidMount"
-     window.addEventListener("resize", handleResizeWindow);
-     return () => {
-       // unsubscribe "onComponentDestroy"
-       window.removeEventListener("resize", handleResizeWindow);
-     };
-   }, []);
   return (
 
   
