@@ -18,8 +18,6 @@ function App() {
   <>
      
 
-
-
     <div className='h-screen w-screen overflow-scroll overflow-x-hidden'>
     <Layout/>
     <div className='mx-5'>
