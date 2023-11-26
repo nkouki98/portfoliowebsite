@@ -93,7 +93,7 @@ function App() {
           Recent work.
         </h1>
       </motion.div>
-      <Work1/>
+      
     </div>
 
     {/* <motion.div
