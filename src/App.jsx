@@ -93,9 +93,10 @@ function App() {
           Recent work.
         </h1>
       </motion.div>
+      <Work1/>
     </div>
 
-    <motion.div
+    {/* <motion.div
       initial="hidden"
       whileInView="visible"
       viewport={{ once:true, amount: 0.4 }}
@@ -109,8 +110,8 @@ function App() {
         <Work1 />
       
       </div>
-    </motion.div>
-    
+    </motion.div> */}
+  
     <div className='bg-white h-screen w-screen flex items-center justify-center'>
       <Contact />
     </div>
