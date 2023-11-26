@@ -20,7 +20,7 @@ const Contact = () => {
         <BoxIcons.BiLogoGithub className="text-4xl sm:text-5xl md:text-7xl text-gray-400 hover:scale-105" /> {/* Adjust icon size for different screen sizes */}
       </a>
       </div>
-      <Button className="bg-black shadow-lg rounded-md p-4">RESUME</Button>
+    
     </div>
 
   </div>
