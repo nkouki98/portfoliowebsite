@@ -18,11 +18,13 @@ function App() {
   <>
      
 
-    <div className='h-screen w-screen overflow-scroll overflow-x-hidden'>
+    <div className='bg-neutral-700 h-screen w-screen overflow-scroll overflow-x-hidden'>
     <Layout/>
-    <div className='mx-5'>
+    <div className=' mx-5'>
       <Welcome/>
     </div>
+
+
     <div id='works'>
 
     <motion.div
@@ -37,12 +39,11 @@ function App() {
         >   
           
   
-
-  <h1 className=" font-thin md:text-8xl text-5xl font-sans text-neutral-700 -tracking-wider md:p-2 text-center md:text-center mx-auto my-12">
+  
+  <h1 className="  font-thin items-start md:text-8xl text-5xl font-sans text-neutral-400 -tracking-wider md:p-2 text-start md:text-center mx-auto my-12">
     Recent work.
   </h1>
   </motion.div>
-
       </div> 
 
       <motion.div
@@ -58,7 +59,7 @@ function App() {
           
   
 
-          <div className=' bg-white flex items-center justify-center'>
+          <div className=' bg-neutral-700 flex items-center justify-center'>
       <Work1/>
       </div>
   </motion.div>  

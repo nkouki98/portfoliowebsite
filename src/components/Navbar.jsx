@@ -5,7 +5,7 @@ const StickyNavbar = () => {
 <nav className="sticky justify-start tracking-wider top-0 bg-transparent font-sans flex pl-10">
       <ul className="flex">
         
-        <li className='text-bold sm:text-sm md:text-base tracking-wider font-sans mx-auto mt-5 text-black '>
+        <li className='text-bold sm:text-sm md:text-base tracking-wider font-sans mx-auto mt-5 text-neutral-200 '>
         
             SYED FARHAN AHMED
          
