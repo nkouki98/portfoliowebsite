@@ -18,7 +18,7 @@ function App() {
   <>
      
 
-    <div className='bg-neutral-700 h-screen w-screen overflow-scroll overflow-x-hidden'>
+    <div className='bg-white h-screen w-screen overflow-scroll overflow-x-hidden'>
     <Layout/>
     <div className=' mx-5'>
       <Welcome/>
@@ -59,7 +59,7 @@ function App() {
           
   
 
-          <div className=' bg-neutral-700 flex items-center justify-center'>
+          <div className=' bg-white flex items-center justify-center'>
       <Work1/>
       </div>
   </motion.div>  

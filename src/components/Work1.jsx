@@ -10,7 +10,7 @@ const Work1 = () => {
   return (
    
    <>
- <div id="" className="bg-black mx-8 rounded-none shadow-xl p-24 w-screen mt-2">
+ <div id="" className="bg-black mx-8 rounded-xl shadow-xl p-24 w-screen mt-2">
       {/* First Row */}
       <div className="flex flex-col md:flex-row mx-auto my-10">
         <div className="w-full md:w-1/2 mb-4 md:mb-0">
@@ -26,8 +26,8 @@ const Work1 = () => {
           <button  onClick={(e) => {
             e.preventDefault();
             window.location.href='https://github.com/nkouki98/weatherreact';
-            }} class="relative inline-flex items-start justify-start p-0.5 mb-2 me-2 overflow-hidden text-sm font-thin text-gray-900 rounded-none group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
-            <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white font-thin tracking-wider dark:bg-gray-900 rounded-none group-hover:bg-opacity-0">
+            }} class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
+            <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white font-thin tracking-wider dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
             VIEW
             </span>
           </button>
@@ -78,7 +78,31 @@ const Work1 = () => {
       
         </div>
       </div>
+
+      <div className="flex flex-col md:flex-row mx-auto my-10">
+        <div className="w-full md:w-1/2 mb-4 md:mb-0">
+          {/* Image on the left covering the entire width */}
+          <img src="project7.png" alt="Your Image" className="w-full h-auto rounded-lg shadow-lg" />
+         
+        </div>
+        <div className="w-full md:w-1/2 md:pl-8">
+          {/* Text (Title and Description) on the right */}
+          <h2 className="text-3xl font-normal font-sans text-gray-400">Bulk Buddies</h2>
+          <p className="mt-4 text-lg text-left text-gray-300 px-8 mb-5 font-thin tracking-tight"> Bulk Food waste management application. I contributed to the front-end development and API integration of the "Catalog" 
+          feature</p>
+          <button  onClick={(e) => {
+            e.preventDefault();
+            window.location.href='https://devpost.com/software/bulkbuddies';
+            }} class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
+            <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white font-thin tracking-wider dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+            VIEW
+            </span>
+          </button>
+         </div>
+      </div>
     </div>
+
+    
 
 
 </>        
