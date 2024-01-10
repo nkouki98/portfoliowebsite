@@ -3,20 +3,20 @@ import ParticleContainer from "./ParticleContainer";
 const Header = () => {
   
     // Function to handle the download button click
-    const handleDownload = () => {
-      // Get the URL of the PDF file from the public folder
-      const pdfURL ='/SyedFarhanAhmed.pdf';
+    // const handleDownload = () => {
+    //   // Get the URL of the PDF file from the public folder
+    //   const pdfURL ='/SyedFarhanAhmed.pdf';
   
-      // Create a temporary link element
-      const link = document.createElement('a');
-      link.href = pdfURL;
+    //   // Create a temporary link element
+    //   const link = document.createElement('a');
+    //   link.href = pdfURL;
   
-      // Set the download attribute to specify the filename
-      link.download = 'SyedAhmedResume.pdf';
+    //   // Set the download attribute to specify the filename
+    //   link.download = 'SyedAhmedResume.pdf';
   
-      // Programmatically trigger the click event on the link
-      link.click();
-    };
+    //   // Programmatically trigger the click event on the link
+    //   link.click();
+    // };
   
     return (
       <header id='1' className="bg-black min-h-screen flex justify-center items-center">
