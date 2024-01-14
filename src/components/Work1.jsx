@@ -1,116 +1,104 @@
-import React from 'react'
-import * as Bootstrap from "react-icons/bs"
-import { motion } from "framer-motion";
+import { motion, useTransform, useScroll } from "framer-motion";
+import { useRef } from "react";
+import { FaArrowRight } from 'react-icons/fa';
 const Work1 = () => {
-
-  const redirectUrl = 'https://581-projects.webflow.io';
-  const handleClick = () => {
-    window.location.href = redirectUrl;
-  };
   return (
-   
-   <>
- <div id="" className="bg-black mx-8 rounded-xl shadow-xl p-24 w-screen mt-2">
-      {/* First Row */}
-      <div className="flex flex-col md:flex-row mx-auto my-10">
-        <div className="w-full md:w-1/2 mb-4 md:mb-0">
-         
-          <img src="project1.png" alt="Your Image" className="w-full border border-neutral-700 h-auto rounded-lg shadow-lg" />
-        </div>
-        <div className="w-full md:w-1/2 md:pl-8">
-          
-          <h2 className="text-3xl font-normal font-sans text-gray-500">Next city</h2>
-          <p className="mt-4 text-lg text-left text-gray-300 px-8 mb-2 font-thin tracking-tight ">An interactive weather app that shows useful weather details and nearby restaurants for the user with dynamic background imagery that adapts to any city the user searches.</p>
-          <p className='text-left text-zinc-400 px-8 mb-5 tracking-tight font-thin font-mono'>React, Tailwind CSS, Rapid API</p>
-          
-          <button  onClick={(e) => {
-            e.preventDefault();
-            window.location.href='https://github.com/nkouki98/weatherreact';
-            }} class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
-            <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white font-thin tracking-wider dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-            VIEW
-            </span>
-          </button>
-
-        </div>
-      </div>
-      {/* Second Row */}
-      <div className="flex flex-col md:flex-row mx-auto my-10">
-        <div className="w-full md:w-1/2 mb-4 md:mb-0">
-          <img src="project4.png" alt="Your Image" className="w-full border border-neutral-700 h-auto rounded-lg shadow-lg" />
-        </div>
-        <div className="w-full md:w-1/2 md:pl-8">
-          {/* Text (Title and Description) on the right */}
-          <h2 className="text-3xl font-normal  font-sans text-gray-500">ReviewScore+</h2>
-          <p className="mt-4 text-lg text-left text-gray-300 font-sans px-8 font-thin mb-1">An app that leverages user reivews and NLP libary to score comments and build a confidence measure for youtube channels that review tech products.</p>
-          
-          <p className='text-left text-zinc-400 font-mono font-thin px-8 mb-5'>Java, Spring boot, Python text processing</p>
-          
-          <button  onClick={(e) => {
-            e.preventDefault();
-            window.location.href='https://github.com/nkouki98/ReviewScoreplus';
-            }} class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
-            <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white font-thin tracking-wider dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-            VIEW
-            </span>
-          </button>
-        </div>
-      </div>
-
-      <div className="flex flex-col md:flex-row mx-auto my-10">
-        <div className="w-full md:w-1/2 mb-4 md:mb-0">
-          
-          <img src="project6.png" alt="Your Image" className="w-full border border-neutral-700 h-auto rounded-lg shadow-lg" />
-         
-        </div>
-        <div className="w-full md:w-1/2 md:pl-8">
-          
-          <h2 className="text-3xl font-normal  font-sans text-gray-400">Human-Computer Interaction Design Projects</h2>
-          <p className="mt-4 text-lg text-left text-gray-300 px-8 font-thin font-sans mb-5"> A series of projects to explore in more detail the process of ideation and converting it to a practical application.</p>
-          <button  onClick={(e) => {
-            e.preventDefault();
-            window.location.href='https://581-projects.webflow.io';
-            }} class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
-            <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white font-thin tracking-wide dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-            VIEW
-            </span>
-          </button>
-      
-        </div>
-      </div>
-
-      <div className="flex flex-col md:flex-row mx-auto my-10">
-        <div className="w-full md:w-1/2 mb-4 md:mb-0">
-          {/* Image on the left covering the entire width */}
-          <img src="project7.png" alt="Your Image" className="w-full h-auto rounded-lg shadow-lg" />
-         
-        </div>
-        <div className="w-full md:w-1/2 md:pl-8">
-          {/* Text (Title and Description) on the right */}
-          <h2 className="text-3xl font-normal font-sans text-gray-400">Bulk Buddies</h2>
-          <p className="mt-4 text-lg text-left text-gray-300 px-8 mb-5 font-thin tracking-tight"> Bulk Food waste management application. I contributed to the front-end development and API integration of the "Catalog" 
-          feature</p>
-          <button  onClick={(e) => {
-            e.preventDefault();
-            window.location.href='https://devpost.com/software/bulkbuddies';
-            }} class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
-            <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white font-thin tracking-wider dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-            VIEW
-            </span>
-          </button>
-         </div>
-      </div>
+    <div className="bg-neutral-200">
+  
+      <HorizontalScrollCarousel />
+  
     </div>
+  );
+};
 
-    
+const HorizontalScrollCarousel = () => {
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
+  console.log(scrollYProgress.get());
+  const x = useTransform(scrollYProgress, [0, 1], ["2%", "-95%"]);
+  
+  return (
+<>
+<h1 className="font-bold md:text-8xl ml-5 p-8 mb-2 tracking-tighter text-neutral-700 ">Some of my
+<span className="ml-3 text-yellow-500">recent work.</span>
+</h1>
 
+<section ref={targetRef} className="relative h-[400vh] bg-neutral-200">
+      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+        <motion.div style={{ x }} className="flex gap-6">
+          {cards.map((card) => {
+            return <Card card={card} key={card.id} />;
+          })}
+        </motion.div>
+      </div>
+    </section></>
+  );
+};
 
-</>        
-      
+const Card = ({ card }) => {
+  return (
+    <a href={card.link} target="_blank" rel="noopener noreferrer" className="group shadow-xl rounded-xl relative h-[450px] w-[500px] overflow-hidden bg-black cursor-pointer hover:scale-105">
+      {/* Text Container */}
+      <div className="absolute top-3 left-2 z-10 p-8">
+        <p className="text-yellow-200 text-sm mb-1 uppercase font-sans font-bold tracking-tighter">{card.tech}</p>
+        <p className="text-neutral-200 mb-2 text-3xl font-bold font-sans tracking-tighter">{card.title}</p>
+        <p className="text-base tracking-wider font-sans font-light text-gray-200">{card.info}</p>
+      </div>
 
+      {/* Background Image */}
+      <div
+        style={{
+          backgroundImage: `url(${card.url})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className="absolute inset-0 z-0 transition-transform duration-100 bg-black opacity-50"
+      ></div>
 
+      {/* Arrow Icon */}
+      <div className="absolute bottom-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <FaArrowRight size={24} />
+      </div>
+    </a>
   );
 };
 
 export default Work1;
 
+const cards = [
+  {
+    url: "project1.png",
+    title: "City Scapes and Eats",
+    info: "An interactive weather app that shows useful weather details and nearby restaurants for the user with dynamic background imagery that adapts to any city the user searches.",
+    tech:"React, Tailwind CSS, Rapid API",
+    link:"https://github.com/nkouki98/weatherreact",
+    id: 1,
+  },
+  {
+    url: "project6.png",
+    title: "Mad minute compounds",
+    info:"Kid's interactive application utilizing sketching methods and design implementation as part of coursework.",
+    tech:"React, Tailwind CSS, Rapid API",
+    link:"https://581-projects.webflow.io/",
+    id: 2,
+  },
+  {
+    url: "project4.png",
+    title: "Reviewscore+",
+    info:"An app that leverages user reivews and NLP libary to score comments and build a confidence measure for youtube channels that review tech products.",
+    tech:"React, Tailwind CSS, Rapid API",
+    link:"https://github.com/nkouki98/ReviewScoreplus",
+    id: 3,
+  },
+  {
+    url: "project7.png",
+    title: "Bulkbuddies",
+    info:"A hackathon project to tackle bulk food purchase waste.",
+    tech:"React, Tailwind CSS, Rapid API",
+    link:"https://devpost.com/software/bulkbuddies",
+    id: 4,
+  },
+  
+];
