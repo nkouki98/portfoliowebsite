@@ -39,12 +39,12 @@ const HorizontalScrollCarousel = () => {
 
 const Card = ({ card }) => {
   return (
-    <a href={card.link} target="_blank" rel="noopener noreferrer" className="group shadow-xl rounded-xl relative h-[450px] w-[500px] overflow-hidden bg-black cursor-pointer hover:scale-105">
+    <a href={card.link} target="_blank" rel="noopener noreferrer" className="group shadow-2xl rounded-xl relative h-[450px] w-[500px] overflow-hidden bg-black cursor-pointer hover:scale-105 ">
       {/* Text Container */}
-      <div className="absolute top-3 left-2 z-10 p-8">
+      <div className="absolute top-3 left-2 z-10 p-8 ">
         <p className="text-yellow-200 text-sm mb-1 uppercase font-sans font-bold tracking-tighter">{card.tech}</p>
         <p className="text-neutral-200 mb-2 text-3xl font-bold font-sans tracking-tighter">{card.title}</p>
-        <p className="text-base tracking-wider font-sans font-light text-gray-200">{card.info}</p>
+        <p className="text-base tracking-wider font-sans font-light text-gray-200 ">{card.info}</p>
       </div>
 
       {/* Background Image */}
@@ -54,9 +54,9 @@ const Card = ({ card }) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="absolute inset-0 z-0 transition-transform duration-100 bg-black opacity-50"
+        className="absolute inset-0 z-0 hover:backdrop-filter hover:backdrop-blur-sm transition-transform duration-300 bg-black opacity-50"
       ></div>
-
+      <div className="absolute inset-0 hover:backdrop-filter hover:backdrop-blur-sm"></div>
       {/* Arrow Icon */}
       <div className="absolute bottom-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <FaArrowRight size={24} />
@@ -95,7 +95,7 @@ const cards = [
   {
     url: "project7.png",
     title: "Bulkbuddies",
-    info:"A hackathon project to tackle bulk food purchase waste.",
+    info:"A hackathon project to tackle bulk food purchase waste. I worked on a core feature for user interaction.",
     tech:"React, Tailwind CSS, Rapid API",
     link:"https://devpost.com/software/bulkbuddies",
     id: 4,
