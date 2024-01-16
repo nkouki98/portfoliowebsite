@@ -73,7 +73,7 @@ const cards = [
     title: "City Scapes and Eats",
     info: "An interactive weather app that shows useful weather details and nearby restaurants for the user with dynamic background imagery that adapts to any city the user searches.",
     tech:"React, Tailwind CSS, Rapid API",
-    link:"https://github.com/nkouki98/weatherreact",
+    link:"weatherreact-five.vercel.app",
     id: 1,
   },
   {
