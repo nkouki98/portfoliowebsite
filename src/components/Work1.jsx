@@ -73,7 +73,7 @@ const cards = [
     title: "City Scapes and Eats",
     info: "An interactive weather app that shows useful weather details and nearby restaurants for the user with dynamic background imagery that adapts to any city the user searches.",
     tech:"React, Tailwind CSS, Rapid API",
-    link:"weatherreact-five.vercel.app",
+    link:"https://weatherreact-five.vercel.app/",
     id: 1,
   },
   {
@@ -87,7 +87,7 @@ const cards = [
   {
     url: "project4.png",
     title: "Reviewscore+",
-    info:"An app that leverages user reivews and NLP libary to score comments and build a confidence measure for youtube channels that review tech products.",
+    info:"An app that leverages user reviews and NLP libary to score comments and build a confidence measure for youtube channels that review tech products.",
     tech:"React, Tailwind CSS, Rapid API",
     link:"https://github.com/nkouki98/ReviewScoreplus",
     id: 3,
