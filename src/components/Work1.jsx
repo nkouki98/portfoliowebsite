@@ -22,7 +22,7 @@ const HorizontalScrollCarousel = () => {
   return (
 <>
 <h1 className="font-bold md:text-8xl ml-5 p-8 mb-2 tracking-tighter text-neutral-700 ">Some of my
-<span className="ml-3 text-yellow-500">recent work.</span>
+<span className="ml-3 text-yellow-500 animate-bounce">recent work.</span>
 </h1>
 
 <section ref={targetRef} className="relative h-[400vh] bg-neutral-200">
