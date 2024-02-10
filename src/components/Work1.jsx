@@ -39,7 +39,7 @@ const HorizontalScrollCarousel = () => {
 
 const Card = ({ card }) => {
   return (
-    <a href={card.link} target="_blank" rel="noopener noreferrer" className="group shadow-2xl rounded-xl relative h-[450px] w-[500px] overflow-hidden bg-black cursor-pointer hover:scale-105 ">
+    <a href={card.link} target="_blank" rel="noopener noreferrer" className="group shadow-2xl relative h-[450px] w-[500px] overflow-hidden bg-black cursor-pointer hover:scale-105 ">
       {/* Text Container */}
       <div className="absolute top-3 left-2 z-10 p-8 ">
         <p className="text-yellow-200 text-sm mb-1 uppercase font-sans font-bold tracking-tighter">{card.tech}</p>
@@ -54,9 +54,9 @@ const Card = ({ card }) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="absolute inset-0 z-0 hover:backdrop-filter hover:backdrop-blur-sm transition-transform duration-300 bg-black opacity-50"
+        className="absolute inset-0 z-0 hover:scale-110 transition-transform duration-300 bg-black opacity-50"
       ></div>
-      <div className="absolute inset-0 hover:backdrop-filter hover:backdrop-blur-sm"></div>
+      <div className="absolute inset-0 hover:scale-110"></div>
       {/* Arrow Icon */}
       <div className="absolute bottom-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <FaArrowRight size={24} />
@@ -80,7 +80,7 @@ const cards = [
     url: "project6.png",
     title: "Mad minute compounds",
     info:"Kid's interactive application utilizing sketching methods and design implementation as part of coursework.",
-    tech:"React, Tailwind CSS, Rapid API",
+    tech:"Glitch, HTML/CSS, JavaScript",
     link:"https://581-projects.webflow.io/",
     id: 2,
   },
@@ -88,7 +88,7 @@ const cards = [
     url: "project4.png",
     title: "Reviewscore+",
     info:"An app that leverages user reviews and NLP libary to score comments and build a confidence measure for youtube channels that review tech products.",
-    tech:"React, Tailwind CSS, Rapid API",
+    tech:"Spring Boot, MongoDB, Postman",
     link:"https://github.com/nkouki98/ReviewScoreplus",
     id: 3,
   },
@@ -96,7 +96,7 @@ const cards = [
     url: "project7.png",
     title: "Bulkbuddies",
     info:"A hackathon project to tackle bulk food purchase waste. I worked on a core feature for user interaction.",
-    tech:"React, Tailwind CSS, Rapid API",
+    tech:"Flask, React, Tailwind CSS",
     link:"https://devpost.com/software/bulkbuddies",
     id: 4,
   },
