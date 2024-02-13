@@ -39,7 +39,7 @@ const HorizontalScrollCarousel = () => {
 
 const Card = ({ card }) => {
   return (
-    <a href={card.link} target="_blank" rel="noopener noreferrer" className="group shadow-2xl relative h-[450px] w-[500px] overflow-hidden bg-black cursor-pointer hover:scale-105 ">
+    <a href={card.link} target="_blank" rel="noopener noreferrer" className="group shadow-2xl relative h-[450px] w-[480px] overflow-hidden bg-black cursor-pointer hover:scale-105 hover:rounded-lg transition-transform ease-in-out duration-300">
       {/* Text Container */}
       <div className="absolute top-3 left-2 z-10 p-8 ">
         <p className="text-yellow-200 text-sm mb-1 uppercase font-sans font-bold tracking-tighter">{card.tech}</p>
@@ -47,23 +47,28 @@ const Card = ({ card }) => {
         <p className="text-base tracking-wider font-sans font-light text-gray-200 ">{card.info}</p>
       </div>
 
-      {/* Background Image */}
+      {/* Background Image with Hover Effects */}
       <div
         style={{
           backgroundImage: `url(${card.url})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="absolute inset-0 z-0 hover:scale-110 transition-transform duration-300 bg-black opacity-50"
+        className="absolute inset-0 z-0 hover:scale-110 transition-transform ease-in-out duration-300 bg-black opacity-40 hover:backdrop-blur-md"
       ></div>
-      <div className="absolute inset-0 hover:scale-110"></div>
+      
+      {/* Overlay */}
+      <div className="p-4 shadow-lg transition-all duration-900 ease-in-out hover:scale-105"></div>
+
       {/* Arrow Icon */}
-      <div className="absolute bottom-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <div className="absolute bottom-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300">
         <FaArrowRight size={24} />
       </div>
     </a>
   );
 };
+
+
 
 export default Work1;
 
