@@ -21,8 +21,8 @@ const HorizontalScrollCarousel = () => {
   
   return (
 <>
-<h1 className="font-bold md:text-8xl ml-5 p-8 mb-2 tracking-tighter text-neutral-700 ">Some of my
-<span className="ml-3 text-yellow-500 animate-bounce">recent work.</span>
+<h1 className="font-bold md:text-8xl ml-5 p-8 mb-2 text-5xl tracking-tighter text-neutral-700 ">Some of my
+<span className="ml-3 bg-gradient-to-r from-pink-500 via-purple-400 to-indigo-400 inline-block text-transparent bg-clip-text">recent work.</span>
 </h1>
 
 <section ref={targetRef} className="relative h-[400vh] bg-neutral-200">
@@ -54,7 +54,7 @@ const Card = ({ card }) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="absolute inset-0 z-0 hover:scale-110 transition-transform ease-in-out duration-300 bg-black opacity-40 hover:backdrop-blur-md"
+        className="absolute inset-0 z-0 hover:scale-110 transition-transform ease-in-out duration-300 bg-black opacity-60 hover:opacity-40 hover:backdrop-blur-md"
       ></div>
       
       {/* Overlay */}
