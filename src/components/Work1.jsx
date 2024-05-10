@@ -82,12 +82,20 @@ const cards = [
     id: 1,
   },
   {
+    url: "assignmenttracker.jpg",
+    title: "Assignment Tracker",
+    info:"Track assignments and update them easily.",
+    tech:"ASP Core net, C#, SQL Server, Docker",
+    link:"https://github.com/nkouki98/Assignment-Tracker",
+    id: 2,
+  },
+  {
     url: "project6.png",
     title: "Mad minute compounds",
     info:"Kid's interactive application utilizing sketching methods and design implementation as part of coursework.",
     tech:"Glitch, HTML/CSS, JavaScript",
     link:"https://581-projects.webflow.io/",
-    id: 2,
+    id: 3,
   },
   {
     url: "project4.png",
@@ -95,7 +103,7 @@ const cards = [
     info:"An app that leverages user reviews and NLP libary to score comments and build a confidence measure for youtube channels that review tech products.",
     tech:"Spring Boot, MongoDB, Postman",
     link:"https://github.com/nkouki98/ReviewScoreplus",
-    id: 3,
+    id: 4,
   },
   {
     url: "project7.png",
@@ -103,7 +111,7 @@ const cards = [
     info:"A hackathon project to tackle bulk food purchase waste. I worked on a core feature for user interaction.",
     tech:"Flask, React, Tailwind CSS",
     link:"https://devpost.com/software/bulkbuddies",
-    id: 4,
+    id: 5,
   },
   
 ];
