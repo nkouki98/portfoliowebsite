@@ -5,23 +5,27 @@ import Contact from './components/Contact';
 import Welcome from './components/Welcome';
 import Work1 from './components/Work1';
 import Layout from './components/Layout';
-
+import Technologies from './components/Technologies';
 function App() {
   return (
     <Router>
       <>
-        <div id='container' className='bg-neutral-200 h-screen'>
-          <Layout />
+   <div className=''>
+        <div id='container' className=' pattern-zigzag-3d pattern-blue-500 pattern-bg-white 
+  pattern-size-6 pattern-opacity-20 h-screen'>
+          {/* <Layout /> */}
           <div>
             <Welcome />
           </div>
-          <div id='works'>
-          </div>
-            <div>
+            <div id='works' className=''>
             <Work1 />
             </div>
-          <div className='bg-neutral-200 h-screen  flex items-center justify-center '>
+            <div className=''>
+              <Technologies/>
+            </div>
+          <div className= "h-screen flex items-center justify-center ">
             <Contact />
+          </div>
           </div>
         </div>
 
