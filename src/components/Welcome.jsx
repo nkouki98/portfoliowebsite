@@ -32,7 +32,7 @@ const Welcome = () => {
                 Aspiring Full Stack Developer and Design Enthusiast.
               </div>
               <div className="mx-3">
-              <button  className=" bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-2 text-lg rounded-lg shadow-md shadow-yellow-200 text-zinc-900 font-sans tracking-tighter duration-200 ease-in-out transform hover:border-2 hover:border-purple-200 hover:text-purple-100 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 active:scale-95">
+              <button onClick={handleDownload}  className=" bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-2 text-lg rounded-lg shadow-md shadow-yellow-200 text-zinc-900 font-sans tracking-tighter duration-200 ease-in-out transform hover:border-2 hover:border-purple-200 hover:text-purple-100 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 active:scale-95">
                 Download CV
               </button>
             </div>
