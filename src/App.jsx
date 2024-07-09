@@ -11,8 +11,7 @@ function App() {
     <Router>
       <>
    <div className=''>
-        <div id='container' className=' pattern-zigzag-3d pattern-blue-500 pattern-bg-white 
-  pattern-size-6 pattern-opacity-20 h-screen'>
+        <div id='container' className='  h-screen'>
           {/* <Layout /> */}
           <div>
             <Welcome />

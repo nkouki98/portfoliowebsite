@@ -13,12 +13,12 @@ const Welcome = () => {
 
 
   return (
-    <header id="1" className="h-screen flex flex-col justify-center items-center relative bg-zinc-900 mx-6 my-3 inset-8 rounded-2xl shadow-xl overflow-hidden">
+    <header id="1" className="h-screen flex flex-col justify-center items-center relative bg-zinc-900 m-5 inset-2 rounded-2xl shadow-xl overflow-hidden">
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 1.2 }}
         variants={{
           hidden: { opacity: 0 },
           visible: { opacity: 1 },
