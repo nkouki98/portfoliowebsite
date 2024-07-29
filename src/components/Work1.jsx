@@ -4,7 +4,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const Work1 = () => {
   return (
-    <div className="bg-zinc-100 mx-8 rounded-2xl shadow-xl">
+    <div className="bg-neutral-100 mx-8 rounded-2xl shadow-xl">
       <HorizontalScrollCarousel />
     </div>
   );
@@ -26,7 +26,7 @@ const HorizontalScrollCarousel = () => {
             recent work.
           </span>
         </h1>
-        <section ref={targetRef} className="relative h-[500vh] bg-zinc-100">
+        <section ref={targetRef} className="relative h-[500vh] bg-neutral-100">
           <div className="sticky top-0 flex h-screen items-center overflow-hidden ">
             <motion.div style={{ x }} className="flex gap-6">
               {cards.map((card) => {
@@ -42,7 +42,6 @@ const HorizontalScrollCarousel = () => {
 
 const Card = ({ card }) => {
   const techArray = card.tech ? card.tech.split(',').map(tech => tech.trim()) : [];
-
   return (
     <motion.a 
       href={card.link} 
@@ -51,19 +50,19 @@ const Card = ({ card }) => {
       animate={{ opacity: 1 }} 
       transition={{ duration: 1.5 }}
     >
-      <div className="relative mt-6 text-gray-700 bg-white hover:scale-100 shadow-md hover:shadow-xl bg-clip-border w-96 h-[500px] cursor-pointer rounded-2xl transition-transform duration-800 ease-in-out overflow-hidden">
-        <div className="relative h-full overflow-hidden text-gray-900 bg-clip-border rounded-xl border-2 border-gray-700">
+      <div className="relative mt-4 text-gray-700 bg-white hover:scale-95 shadow-md hover:shadow-3xl bg-clip-border w-96 h-[500px] cursor-pointer rounded-xl transition-transform duration-[1200ms] ease-in-out overflow-hidden bg-gradient-to-r from-pink-200 via-purple-200 to-indigo-200 font-semibold px-3 py-3">
+        <div className="relative h-full overflow-hidden text-gray-900 rounded-lg">
           <img
             src={card.image}
             alt="card-image"
-            className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-105"
+            className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
           />
-          <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-70 transition-opacity duration-500 ease-in-out"></div>
-          <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out space-y-2">
+          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-900 ease-in-out"></div>
+          <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-1000 ease-in-out space-y-2">
             <h2 className="text-white text-xl font-semibold font-sans tracking-tighter">{card.title}</h2>
-            <div className="flex flex-wrap justify-center gap-2">
+            <div className="flex flex-wrap justify-center">
               {techArray.map((tech, index) => (
-                <span key={index} className=" rounded-2xl px-3 py-1 text-sm font-normal tracking-wide font-mono text-cyan-100">
+                <span key={index} className=" rounded-xl px-3 py-1 text-sm font-normal tracking-tight font-mono text-cyan-100">
                   {tech}
                 </span>
               ))}
@@ -77,6 +76,7 @@ const Card = ({ card }) => {
     </motion.a>
   );
 };
+
 
 export default Work1;
 
