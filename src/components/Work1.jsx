@@ -26,7 +26,7 @@ const HorizontalScrollCarousel = () => {
             recent work.
           </span>
         </h1>
-        <section ref={targetRef} className="relative h-[400vh] rounded-xl bg-zinc-100">
+        <section ref={targetRef} className="relative h-[500vh] bg-zinc-100">
           <div className="sticky top-0 flex h-screen items-center overflow-hidden ">
             <motion.div style={{ x }} className="flex gap-6">
               {cards.map((card) => {
@@ -42,7 +42,7 @@ const HorizontalScrollCarousel = () => {
 
 const Card = ({ card }) => {
   const techArray = card.tech ? card.tech.split(',').map(tech => tech.trim()) : [];
-  
+
   return (
     <motion.a 
       href={card.link} 
@@ -51,28 +51,27 @@ const Card = ({ card }) => {
       animate={{ opacity: 1 }} 
       transition={{ duration: 1.5 }}
     >
-      <div className="relative flex flex-col mt-6 text-gray-700 bg-white hover:bg-neutral-100 hover:scale-105 hover:border hover:border-zinc-300 shadow-lg hover:shadow-xl bg-clip-border w-96 h-[450px] cursor-pointer hover:rounded-lg transition-transform duration-700 ease-in-out">
-        <div className="relative h-80 mx-4 -mt-6 overflow-hidden text-gray-900 shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 font-mono">
+      <div className="relative mt-6 text-gray-700 bg-white hover:scale-100 shadow-md hover:shadow-xl bg-clip-border w-96 h-[500px] cursor-pointer rounded-2xl transition-transform duration-800 ease-in-out overflow-hidden">
+        <div className="relative h-full overflow-hidden text-gray-900 bg-clip-border rounded-xl border-2 border-gray-700">
           <img
             src={card.image}
             alt="card-image"
-            className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
+            className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-105"
           />
-        </div>
-        <div className="p-6 flex-1 flex flex-col">
-          <h5 className="block mb-2 font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900">
-            {card.title}
-          </h5>
-          <div className="flex flex-wrap gap-2 mt-2">
-            {techArray.map((tech, index) => (
-              <div key={index} className="bg-cyan-800 shadow-md rounded-full px-3 py-1 text-sm font-normal tracking-normal text-cyan-100">
-                {tech}
-              </div>
-            ))}
+          <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-70 transition-opacity duration-500 ease-in-out"></div>
+          <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out space-y-2">
+            <h2 className="text-white text-xl font-semibold font-sans tracking-tighter">{card.title}</h2>
+            <div className="flex flex-wrap justify-center gap-2">
+              {techArray.map((tech, index) => (
+                <span key={index} className=" rounded-2xl px-3 py-1 text-sm font-normal tracking-wide font-mono text-cyan-100">
+                  {tech}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="absolute bottom-4 right-4 text-gray-900 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
-          <FaArrowRight size={18} />
+          <div className="absolute bottom-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+            <FaArrowRight size={18} />
+          </div>
         </div>
       </div>
     </motion.a>
@@ -94,7 +93,7 @@ const cards = [
     image: "project1.png",
     title: "NextCity",
     info: "An interactive weather app that shows useful weather details and nearby restaurants for the user with dynamic background imagery that adapts to any city the user searches.",
-    tech:"React, JavaScript, Tailwind CSS",
+    tech:"React, JavaScript, TailwindCSS",
     link:"https://weatherreact-five.vercel.app/",
     id: 2,
   },
@@ -126,7 +125,7 @@ const cards = [
     image: "project7.png",
     title: "Bulkbuddies",
     info:"A hackathon project to tackle bulk food purchase waste. I worked on a core feature for user interaction.",
-    tech:"Flask, React, Tailwind CSS, Figma",
+    tech:"Flask, React, TailwindCSS, Figma",
     link:"https://devpost.com/software/bulkbuddies",
     id: 6,
   },
