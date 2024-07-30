@@ -40,8 +40,46 @@ const HorizontalScrollCarousel = () => {
   );
 };
 
+// const Card = ({ card }) => {
+//   const techArray = card.tech ? card.tech.split(',').map(tech => tech.trim()) : [];
+//   return (
+//     <motion.a 
+//       href={card.link} 
+//       className="group"
+//       initial={{ opacity: 0 }} 
+//       animate={{ opacity: 1 }} 
+//       transition={{ duration: 1.5 }}
+//     >
+//       <div className="relative mt-4 text-gray-700 bg-white hover:scale-95 shadow-md hover:shadow-3xl bg-clip-border w-96 h-[500px] cursor-pointer rounded-xl transition-transform duration-[1200ms] ease-in-out overflow-hidden bg-gradient-to-r from-pink-200 via-purple-200 to-indigo-200 font-semibold px-3 py-3">
+//         <div className="relative h-full overflow-hidden text-gray-900 rounded-lg">
+//           <img
+//             src={card.image}
+//             alt="card-image"
+//             className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
+//           />
+//           <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-900 ease-in-out"></div>
+//           <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-1000 ease-in-out space-y-2">
+//             <h2 className="text-white text-xl font-semibold font-sans tracking-tighter">{card.title}</h2>
+//             <div className="flex flex-wrap justify-center">
+//               {techArray.map((tech, index) => (
+//                 <span key={index} className=" rounded-xl px-3 py-1 text-sm font-normal tracking-tight font-mono text-cyan-100">
+//                   {tech}
+//                 </span>
+//               ))}
+//             </div>
+//           </div>
+//           <div className="absolute bottom-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+//             <FaArrowRight size={18} />
+//           </div>
+//         </div>
+//       </div>
+//     </motion.a>
+//   );
+// };
+
 const Card = ({ card }) => {
   const techArray = card.tech ? card.tech.split(',').map(tech => tech.trim()) : [];
+
   return (
     <motion.a 
       href={card.link} 
@@ -50,27 +88,38 @@ const Card = ({ card }) => {
       animate={{ opacity: 1 }} 
       transition={{ duration: 1.5 }}
     >
-      <div className="relative mt-4 text-gray-700 bg-white hover:scale-95 shadow-md hover:shadow-3xl bg-clip-border w-96 h-[500px] cursor-pointer rounded-xl transition-transform duration-[1200ms] ease-in-out overflow-hidden bg-gradient-to-r from-pink-200 via-purple-200 to-indigo-200 font-semibold px-3 py-3">
-        <div className="relative h-full overflow-hidden text-gray-900 rounded-lg">
-          <img
-            src={card.image}
-            alt="card-image"
-            className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
-          />
-          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-900 ease-in-out"></div>
-          <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-1000 ease-in-out space-y-2">
-            <h2 className="text-white text-xl font-semibold font-sans tracking-tighter">{card.title}</h2>
-            <div className="flex flex-wrap justify-center">
-              {techArray.map((tech, index) => (
-                <span key={index} className=" rounded-xl px-3 py-1 text-sm font-normal tracking-tight font-mono text-cyan-100">
-                  {tech}
-                </span>
-              ))}
-            </div>
+      <div className="relative mt-3 text-gray-700 bg-white hover:scale-95 shadow-md hover:shadow-3xl bg-clip-border hover:border hover:border-gray-400 w-[30rem] h-[550px] cursor-pointer rounded-xl transition-transform duration-[1200ms] ease-in-out overflow-hidden bg-gradient-to-r from-pink-200 via-purple-200 to-indigo-200 font-semibold p-3">
+        <h1 className="font-sans tracking-tighter font-semibold text-gray-600 text-lg mb-1">{card.title}</h1>
+        <div className="relative h-[450px] overflow-hidden text-gray-900 rounded-xl">
+        {card.mp4 ? (
+            <video
+              src={card.mp4}
+              autoPlay
+              loop
+              muted
+              className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
+            />
+          ) : (
+            <img
+              src={card.image}
+              alt={card.title}
+              className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
+            />
+          )}
+          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-0 transition-opacity duration-900 ease-in-out"></div>
+        </div>
+        {/* White background container for title and tech */}
+        <div className="absolute bottom-0 bg-gray-900/0 left-0 w-full text-gray-900 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out p-2 flex flex-col items-center space-y-2">
+          <div className="flex flex-wrap justify-center">
+            {techArray.map((tech, index) => (
+              <span key={index} className="rounded-xl px-1 py-2 text-sm font-normal tracking-tighter font-mono text-gray-900">
+                {tech}
+              </span>
+            ))}
           </div>
-          <div className="absolute bottom-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
-            <FaArrowRight size={18} />
-          </div>
+        </div>
+        <div className=" absolute bottom-4 right-6 text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+          <FaArrowRight size={16} />
         </div>
       </div>
     </motion.a>
@@ -78,11 +127,14 @@ const Card = ({ card }) => {
 };
 
 
+
+
 export default Work1;
 
 const cards = [
   {
     image: "project9.png",
+    mp4:"notecreateapp.mp4",
     title: "Notesnow",
     info: "An interactive weather app that shows useful weather details and nearby restaurants for the user with dynamic background imagery that adapts to any city the user searches.",
     tech:"React, Typescript, Tailwind CSS",
@@ -91,6 +143,7 @@ const cards = [
   },
   {
     image: "project1.png",
+    mp4:"weatherapp.mp4",
     title: "NextCity",
     info: "An interactive weather app that shows useful weather details and nearby restaurants for the user with dynamic background imagery that adapts to any city the user searches.",
     tech:"React, JavaScript, TailwindCSS",
@@ -99,6 +152,7 @@ const cards = [
   },
   {
     image: "assignmenttracker.jpg",
+    mp4:"", 
     title: "Assignment Tracker",
     info:"Track assignments and update them easily.",
     tech:"ASP Core net, C#, SQL Server",
@@ -107,6 +161,7 @@ const cards = [
   },
   {
     image: "project6.png",
+    mp4:"",
     title: "Mad minute compounds",
     info:"Kid's interactive application utilizing sketching methods and design implementation as part of coursework.",
     tech:"Glitch, HTML/CSS, JavaScript",
@@ -115,6 +170,7 @@ const cards = [
   },
   {
     image: "project4.png",
+    mp4:"",
     title: "Reviewscore+",
     info:"An app that leverages user reviews and NLP libary to score comments and build a confidence measure for youtube channels that review tech products.",
     tech:"Spring Boot, MongoDB",
@@ -123,6 +179,7 @@ const cards = [
   },
   {
     image: "project7.png",
+    mp4:"",
     title: "Bulkbuddies",
     info:"A hackathon project to tackle bulk food purchase waste. I worked on a core feature for user interaction.",
     tech:"Flask, React, TailwindCSS, Figma",
