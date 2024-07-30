@@ -93,12 +93,10 @@ const Card = ({ card }) => {
         <div className="relative h-[450px] overflow-hidden text-gray-900 rounded-xl">
         {card.mp4 ? (
             <video
-              src={card.mp4} // Use the MP4 video source
+              src={card.mp4}
               autoPlay
               loop
               muted
-              playsInline
-              controls
               className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
             />
           ) : (
