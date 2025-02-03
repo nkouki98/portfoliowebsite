@@ -13,7 +13,7 @@ const Welcome = () => {
 
 
   return (
-    <header id="1" className="h-screen flex flex-col justify-center items-center relative bg-zinc-900 m-5 inset-2 rounded-2xl shadow-xl overflow-hidden">
+    <header id="1" className="h-screen border-2 border-spacing-2 border-yellow-300 flex flex-col justify-center items-center relative bg-zinc-900 m-5 inset-2 rounded-2xl shadow-xl overflow-hidden">
       <motion.div
         initial="hidden"
         whileInView="visible"

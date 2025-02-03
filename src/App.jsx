@@ -11,7 +11,7 @@ function App() {
     <Router>
       <>
    <div className=''>
-        <div id='container' className='  h-screen'>
+        <div id='container' className=' h-screen'>
           {/* <Layout /> */}
           <div>
             <Welcome />
